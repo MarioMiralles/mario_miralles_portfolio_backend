@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-z6zlwc0#yo-0@vy5&1+#6q*1hqzm=v1#u%@mpq6*5fi#vx(i^w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['ec2-3-142-122-193.us-east-2.compute.amazonaws.com','3.142.122.193']
 
 # Application definition
 
@@ -54,10 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:5173",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'mario_miralles_portfolio_backend.urls'
 
